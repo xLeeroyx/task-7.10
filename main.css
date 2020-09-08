@@ -23,11 +23,6 @@ h1 {
     -webkit-text-stroke-color: white;
 }
 
-.new::before {
-    content: '(New!)';
-    color: red;
-}
-
 .news {
     background-color: #fff;
     padding: 50px 0 32px;
@@ -68,6 +63,14 @@ article img {
     height: 300px;
     object-fit: cover;
 }
+
+section:nth-child(-n+3) h2:before {
+    content: 'New';
+    color: red;
+    padding: 5px;
+    font-size: small;
+    vertical-align: top;
+  }
 
 footer {
     padding-top: 20px;
